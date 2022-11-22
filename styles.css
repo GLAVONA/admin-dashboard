@@ -18,7 +18,7 @@ body{
 .container{
     display:grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
     height: 100vh;
     width: 100vw;
 }
@@ -89,6 +89,7 @@ body{
     align-items: center;
     font-size: 1.8rem;
     gap:2vw;
+    font-weight: 600;
 }
 
 .menu>.bottom-side a{ 
@@ -98,11 +99,97 @@ body{
     align-items: center;
     font-size: 1.8rem;
     gap:2vw;
+    font-weight: 600;
 }
 
 .header{
     padding: .8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    box-shadow: 0px 15px 10px -10px rgb(145, 145, 145);
+    z-index: 1;
 }
+
+.header>.top-side{
+    display: flex;
+}
+
+
+.search-container{
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+    flex-grow: 1;
+}
+
+.search-container #search-bar{
+    flex: 0.7;
+    border-radius: 6px;
+    border: 0px;
+    background-color: var(--grey);
+    padding: 6px;
+}
+
+.top-right-container{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    font-weight: 700;
+}
+
+.top-right-container #avatar{
+    width: 2rem;
+    height: 2rem;
+    margin-right: -1rem;
+}
+
+
+.bottom-side{
+    display: flex;
+
+}
+
+.bottom-side>.left{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    flex:1;
+    gap:1rem;
+}
+
+.left>.text{
+    font-weight: 700;
+}
+
+.left>.text>.hi{
+    font-size: .8rem;
+}
+
+.left>.text>.name{
+    font-size: 1.2rem;
+}
+
+.bottom-side>.left #avatar{
+    width: 3rem;
+    height: 3rem;
+}
+
+.bottom-side>.right{
+    display: flex;
+    gap: 1.5vw;
+}
+
+.bottom-side>.right button{
+    background-color: var(--blue);
+    color: var(--white);
+    border-style: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 30px;
+}
+
 
 .main-content{
     background-color: var(--grey);

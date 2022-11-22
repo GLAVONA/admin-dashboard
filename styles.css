@@ -1,13 +1,18 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+}
+
 :root{
     --grey: #e2e8f0;
     --blue:  #1992d4;
     --white: #ffff;
 }
 
-
 body{
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    font-family: "Quicksand";
 }
 
 .container{
@@ -22,7 +27,7 @@ body{
     background-color: var(--blue);
     grid-row: 1 / 3;
     padding: .8rem;
-    padding-left: 3rem;
+    padding-left: 2rem;
     display:grid;
     grid-template-rows: auto 1fr;
     gap: 2rem;
@@ -32,21 +37,17 @@ body{
     color: var(--white);
 }
 
-.sidebar>.menu{
-    display: grid;
-    grid-template-rows: auto 1fr;
-    gap: 2rem;    
-}
-
 .logo{
     display: flex;
-    gap: 1rem;
+    gap: 2vw;
     align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .logo-grid{
-    height: 2rem;
-    width: 2rem;
+    height: 36px;
+    width: 36px;
     background-color: var(--white);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -63,28 +64,40 @@ body{
     grid-row: 2/4;
 }
 
+.sidebar>.menu{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 5rem;
+}
+
 .menu>.top-side{
     display:flex;
     flex-direction: column;
-    gap: 0.5rem;
-}
-
-
-.menu>.top-side a{ 
-    color: var(--white);
-    text-decoration: none;
-    align-items: center;
+    gap: 1.5rem;
 }
 
 .menu>.bottom-side{
     display:flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
 }
 
-.menu>.bottom-side a{
+.menu>.top-side a{ 
     color: var(--white);
     text-decoration: none;
+    display:flex;
+    align-items: center;
+    font-size: 1.8rem;
+    gap:2vw;
+}
+
+.menu>.bottom-side a{ 
+    color: var(--white);
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    font-size: 1.8rem;
+    gap:2vw;
 }
 
 .header{

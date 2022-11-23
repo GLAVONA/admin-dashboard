@@ -188,7 +188,7 @@ body{
     color: var(--white);
     border-style: none;
     border-radius: 30px;
-    width: 4rem;
+    width: 6rem;
 }
 
 .main-content{
@@ -219,9 +219,39 @@ body{
     gap: 2rem;
 }
 
-.project{
-    border: 1px solid black;
+.projects-table>.wrapper{
+    background-color: var(--white);
+    box-shadow: 10px 10px 10px -10px rgb(145, 145, 145);
+    border-left: 0.6rem solid orange;
+    display: grid;
+    grid-template-rows: 1fr 0.2fr;
+    border-radius: 10px;
+    padding: 1rem;
+
 }
+
+.proj-header{
+    font-weight: bolder;
+}
+
+.proj-description{
+    color: rgb(82, 82, 82);
+}
+
+.proj-header,
+.proj-description{
+    grid-row: 1/2;
+}
+
+.mini-buttons{
+    padding-right: 1rem;
+}
+
+.mini-buttons img{
+    float: right;
+    margin-left: 1.5rem;
+}
+
 
 .announcements{
     display: flex;
@@ -256,10 +286,11 @@ div[class^="an-item-container"]{
 
 .an-item-text{
     flex: 1 1 0;
-    font-weight: normal;
+    font-weight:normal;
     overflow: hidden;
     text-overflow: ellipsis;
     overflow-wrap: break-word;
+    color: rgb(82, 82, 82);
 }
 
 .trending{
@@ -294,5 +325,9 @@ div[class^="tr-item"]>img{
 }
 
 div[class^="tr-item"]>.handle>.at-handle{
-    font-weight: 700;
+    font-weight: bold;
+}
+
+div[class^="tr-item"]>.handle>.name{
+    color: rgb(82, 82, 82);
 }

@@ -180,15 +180,15 @@ body{
 .bottom-side>.right{
     display: flex;
     gap: 1.5vw;
+    
 }
 
 .bottom-side>.right button{
     background-color: var(--blue);
     color: var(--white);
     border-style: none;
-    padding-left: 2vw;
-    padding-right: 2vw;
     border-radius: 30px;
+    width: 4rem;
 }
 
 .main-content{
